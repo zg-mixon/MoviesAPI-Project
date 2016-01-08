@@ -1,0 +1,18 @@
+﻿<!--<ul>
+    <li ng-repeat="movie in moviesList.movies">
+        {{movie.title}}
+    </li>
+</ul>-->
+<h1></h1>
+<select ng-model="moviesList.selectedGenre"
+        ng-options="genre.name for genre in moviesList.genres"
+        ng-change="moviesList.getMovies()">
+    
+</select>
+
+<ul>
+    <li ng-repeat="movie in moviesList.movies" style="margin:10px">
+        {{movie.title}}
+    </li>
+
+</ul>
